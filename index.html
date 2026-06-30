@@ -1,278 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skyline Builders| Modern Premium Construction</title>
+    <meta name="description" content="Skyline Builders - Building Tomorrow's Landmarks with Excellence. Premium construction and architectural services.">
+    <title>Skyline Builders | Premium Construction Services</title>
+    
+    <!-- Favicon (Professional 'S' Logo Concept) -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/D4AF37/s-uppercase.png">
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
+    <!-- Loading Animation -->
+    <div class="preloader" id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">S</div>
+            <div class="loader-bar"></div>
+        </div>
     </div>
+    <div class="floating-icon">
+    🏗️
+</div>
+<div class="scroll-down">
+    ↓
+</div>
+<section class="about" data-aos="fade-right"></section>
+<section class="services" data-aos="zoom-in"></section>
+<section class="projects" data-aos="fade-up"></section>
+<section class="contact" data-aos="fade-left"></section>
 
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Sky<span>line</span></a>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <div class="logo-icon">S</div>
+                <div class="logo-text">SKYLINE <span>BUILDERS</span></div>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link nav-btn">Get a Quote</a></li>
             </ul>
-            <div class="nav-btns">
-                <a href="#contact" class="btn-gold">Get Quote</a>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/bg.jpeg" alt="Construction background">
+        </div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h4 class="reveal-up">Building Your Dreams</h4>
-            <h1 class="reveal-up"><span id="typing-text"></span></h1>
-            <p class="reveal-up">Experience the fusion of luxury architecture and world-class engineering. We turn your ambitious visions into concrete reality.</p>
-            <div class="hero-actions reveal-up">
-                <a href="#contact" class="btn-primary ripple">Get a Free Quote</a>
-                <a href="#projects" class="btn-outline ripple">View Projects</a>
+        <div class="container">
+            <div class="hero-content">
+                <h4 class="fade-in">From Blueprint to Reality</h4>
+                <h1 class="reveal-text"> Building <span> your</span>DREAMS.  </h1>
+                <p class="fade-in">Experience high-end architectural design, sustainable building, and precision engineering tailored to your vision.</p>
+                <div class="hero-btns fade-in">
+                    <a href="#projects" class="btn btn-primary">View Our Projects</a>
+                    <a href="#services" class="btn btn-outline">Our Services</a>
+                </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-            <span>Scroll Down</span>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <h2 class="counter" data-target="120">0</h2>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-card">
+                <h2 class="counter" data-target="100">0</h2>
+                <p>Expert Engineers</p>
+            </div>
+            <div class="stat-card">
+                <h2 class="counter" data-target="15">0</h2>
+                <p>Years Excellence</p>
+            </div>
+            <div class="stat-card">
+                <h2 class="counter" data-target="25">0</h2>
+                <p>Active Sites</p>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <div class="about-wrapper">
-                <div class="about-img reveal-left">
-                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800" alt="Construction Site">
-                    <div class="exp-badge">
-                        <span class="num">15</span>
-                        <span class="txt">Years of Excellence</span>
-                    </div>
-                </div>
-                <div class="about-text reveal-right">
-                    <span class="sub-title">Who We Are</span>
-                    <h2>Leading the Industry with <br>Innovation & Integrity</h2>
-                    <p>At Skyline Builders, we don't just build structures; we build trust. With over two decades of experience in high-end residential and commercial construction, we bring unparalleled craftsmanship to every square foot.</p>
-                    <ul class="about-list">
-                        <li><i class="fas fa-check-circle"></i> Sustainable Building Practices</li>
-                        <li><i class="fas fa-check-circle"></i> Award-winning Architecture</li>
-                        <li><i class="fas fa-check-circle"></i> Global Material Sourcing</li>
-                    </ul>
-                    <a href="#" class="btn-primary">Learn More</a>
+    <section class="about section" id="about">
+        <div class="container grid-2">
+            <div class="about-img scroll-reveal left">
+                <img src="images/about.png" alt="About Skyline Builders">
+                <div class="exp-badge">
+                    <h3>15+</h3>
+                    <p>Years of Quality</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Statistics -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h2 class="counter" data-target="150">0</h2>
-                    <p>Projects Completed</p>
-                </div>
-                <div class="stat-item">
-                    <h2 class="counter" data-target="100">0</h2>
-                    <p>Expert Architects</p>
-                </div>
-                <div class="stat-item">
-                    <h2 class="counter" data-target="34">0</h2>
-                    <p>Industry Awards</p>
-                </div>
-                <div class="stat-item">
-                    <h2 class="counter" data-target="99%">0</h2>
-                    <p>Happy Clients %</p>
-                </div>
+            <div class="about-text scroll-reveal right">
+                <span class="tag">Who We Are</span>
+                <h2>Leading the Construction Industry with Innovation</h2>
+                <p>Skyline Builders is a premier construction firm dedicated to turning ambitious blueprints into architectural reality. Since 2008, we have specialized in commercial, residential, and industrial infrastructure.</p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> Certified Quality Management</li>
+                    <li><i class="fas fa-check-circle"></i> Eco-friendly Building Materials</li>
+                    <li><i class="fas fa-check-circle"></i> Strict Safety Protocols</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Learn More About Us</a>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services section-padding">
+    <section class="services section" id="services">
         <div class="container">
-            <div class="section-header">
-                <span class="sub-title">Our Expertise</span>
-                <h2>Premium Construction Services</h2>
+            <div class="section-title">
+                <span class="tag">What We Offer</span>
+                <h2>Our Premium Services</h2>
             </div>
             <div class="services-grid">
-                <div class="service-card reveal-up">
-                    <div class="icon-box"><i class="fas fa-city"></i></div>
-                    <h3>Commercial Build</h3>
-                    <p>State-of-the-art office complexes and retail spaces designed for modern business needs.</p>
+                <div class="service-card scroll-reveal">
+                    <i class="fas fa-building"></i>
+                    <h3>General Contracting</h3>
+                    <p>Comprehensive management of construction projects from ground-breaking to handover.</p>
                 </div>
-                <div class="service-card reveal-up">
-                    <div class="icon-box"><i class="fas fa-home"></i></div>
-                    <h3>Luxury Residential</h3>
-                    <p>Custom-built homes that reflect your personality with premium finishes and smart tech.</p>
-                </div>
-                <div class="service-card reveal-up">
-                    <div class="icon-box"><i class="fas fa-compass"></i></div>
+                <div class="service-card scroll-reveal">
+                    <i class="fas fa-pencil-ruler"></i>
                     <h3>Architectural Design</h3>
-                    <p>Innovative design solutions that balance aesthetic beauty with structural integrity.</p>
+                    <p>Modern, functional, and aesthetically superior designs tailored to your specific needs.</p>
                 </div>
-                <div class="service-card reveal-up">
-                    <div class="icon-box"><i class="fas fa-tools"></i></div>
-                    <h3>Renovation</h3>
-                    <p>Transforming existing structures into modern masterpieces with minimal disruption.</p>
-                </div>
-                <div class="service-card reveal-up">
-                    <div class="icon-box"><i class="fas fa-hard-hat"></i></div>
+                <div class="service-card scroll-reveal">
+                    <i class="fas fa-hard-hat"></i>
                     <h3>Project Management</h3>
-                    <p>Comprehensive oversight from groundbreaking to final inspection, ensuring deadlines.</p>
+                    <p>Ensuring every project stays on schedule, within budget, and above quality standards.</p>
                 </div>
-                <div class="service-card reveal-up">
-                    <div class="icon-box"><i class="fas fa-leaf"></i></div>
-                    <h3>Green Building</h3>
-                    <p>Eco-friendly construction methods and materials for a sustainable future.</p>
+                <div class="service-card scroll-reveal">
+                    <i class="fas fa-tools"></i>
+                    <h3>Renovations</h3>
+                    <p>Restoring and upgrading existing structures with modern engineering techniques.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Gallery -->
-    <section id="projects" class="projects section-padding">
+    <!-- Featured Projects -->
+    <section class="projects section" id="projects">
         <div class="container">
-            <div class="section-header">
-                <span class="sub-title">Portfolio</span>
-                <h2>Featured Masterpieces</h2>
+            <div class="section-title">
+                <span class="tag">Portfolio</span>
+                <h2>Recent Landmarks</h2>
             </div>
-            <div class="project-gallery">
-                <div class="project-item reveal-zoom">
-                    <img src="images/ch.jpg" alt="Project 1">
-                    <div class="project-info">
-                        <h3>The Sky Tower</h3>
-                        <p>Commercial Hub</p>
+            <div class="projects-grid">
+                <div class="project-item scroll-reveal">
+                    <img src="images/ch.jpg" alt="Commercial Center">
+                    <div class="project-overlay">
+                        <h4>Skyline Corporate Hub</h4>
+                        <p>Commercial Construction</p>
                     </div>
                 </div>
-                <div class="project-item reveal-zoom">
-                    <img src="images/project1.jpg.jpeg" alt="Project 2">
-                    <div class="project-info">
-                        <h3>Azure Villa</h3>
+                <div class="project-item scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=600" alt="Luxury Villa">
+                    <div class="project-overlay">
+                        <h4>Golden Sands Villa</h4>
                         <p>Residential Luxury</p>
                     </div>
                 </div>
-                 
-                <div class="project-item reveal-zoom">
-                    <img src="images/ul.jpg" alt="Project 4">
-                    <div class="project-info">
-                        <h3>Golden Estates</h3>
-                        <p>Urban Living</p>
+                <div class="project-item scroll-reveal">
+                    <img src="images/ip.jpg" alt="Industrial Plant">
+                    <div class="project-overlay">
+                        <h4>Apex Industrial Plant</h4>
+                        <p>Infrastructure</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Timeline -->
-    <section class="process section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="sub-title">How We Work</span>
-                <h2>The Construction Process</h2>
+    <!-- Why Choose Us -->
+    <section class="why-us section">
+        <div class="container grid-2">
+            <div class="why-text scroll-reveal left">
+                <span class="tag">Why Skyline</span>
+                <h2>Excellence In Every Detail</h2>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="feature-content">
+                        <h4>Unmatched Safety</h4>
+                        <p>We maintain a zero-incident safety culture across all our construction sites.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <div class="feature-content">
+                        <h4>On-Time Delivery</h4>
+                        <p>Our project management software keeps every milestone on precise schedule.</p>
+                    </div>
+                </div>
             </div>
-            <div class="timeline">
-                <div class="timeline-item reveal-left">
-                    <div class="t-circle">01</div>
-                    <div class="t-content">
-                        <h3>Consultation</h3>
-                        <p>Discussing goals, budget, and vision for the project.</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-right">
-                    <div class="t-circle">02</div>
-                    <div class="t-content">
-                        <h3>Planning & Design</h3>
-                        <p>Creating detailed blueprints and selecting premium materials.</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-left">
-                    <div class="t-circle">03</div>
-                    <div class="t-content">
-                        <h3>Construction</h3>
-                        <p>Our expert team executes the build with precision and safety.</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-right">
-                    <div class="t-circle">04</div>
-                    <div class="t-content">
-                        <h3>Final Handover</h3>
-                        <p>Quality checks and delivering your dream project.</p>
-                    </div>
-                </div>
+            <div class="why-img scroll-reveal right">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800" alt="Construction Work">
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Slider -->
-    <section class="testimonials section-padding">
+    <!-- Testimonials -->
+    <section class="testimonials section">
         <div class="container">
-            <div class="testimonial-container">
-                <div class="testimonial-slider">
-                    <div class="testimonial-slide active">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"Skyline delivered our corporate headquarters ahead of schedule. The attention to detail in the glasswork is simply breathtaking."</p>
-                        <h4>Robert Sterling</h4>
-                        <span>CEO, TechDynamics</span>
-                    </div>
-                    <div class="testimonial-slide">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"Building my dream home with Apex was a stress-free experience. Their transparent pricing and expert advice were invaluable."</p>
-                        <h4>Sarah Jenkins</h4>
-                        <span>Homeowner</span>
-                    </div>
-                </div>
-                <div class="slider-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                </div>
+            <div class="section-title">
+                <span class="tag">Clients</span>
+                <h2>Testimonials</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- FAQ Accordion -->
-    <section class="faq section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2>Common Questions</h2>
-            </div>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <div class="accordion-header">What is your typical project timeline? <i class="fas fa-plus"></i></div>
-                    <div class="accordion-body">
-                        <p>Timeline varies based on scale. Residential projects take 6-12 months, while commercial hubs range from 18-36 months.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">Do you offer warranty on construction? <i class="fas fa-plus"></i></div>
-                    <div class="accordion-body">
-                        <p>Yes, we offer a comprehensive 10-year structural warranty and a 2-year warranty on all finishings.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">Are your buildings energy efficient? <i class="fas fa-plus"></i></div>
-                    <div class="accordion-body">
-                        <p>Every Apex project includes smart insulation and energy-efficient systems as a standard feature.</p>
+            <div class="testimonial-slider scroll-reveal">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Skyline Builders delivered our corporate headquarters 2 months ahead of schedule. The craftsmanship is world-class."</p>
+                    <div class="client">
+                        <strong>Robert J. David</strong>
+                        <span>CEO, TechPark Global</span>
                     </div>
                 </div>
             </div>
@@ -280,100 +241,93 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section-padding">
+    <section class="contact section" id="contact">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-info">
+                <div class="contact-info scroll-reveal left">
                     <h2>Get In Touch</h2>
-                    <p>Ready to start your next luxury project? Contact our experts today.</p>
+                    <p>Ready to start your next project? Contact us for a free consultation and estimate.</p>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>123 Luxury Ave, Manhattan, NY 10001</p>
+                        <p>123 Skyline Tower, Construction Ave, NY 10001</p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
-                        <p>+1 (555) Sky-line</p>
+                        <p>+1 (555) 123-4567</p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <p>contact@skyline.com</p>
+                        <p>info@skylinebuilders.com</p>
                     </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <div class="map-box">
+                        <!-- Simplified Google Maps Embed -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.142293761893!2d-73.98731968459377!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480293%3A0x5117f706139d8566!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1684340000000!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="mainContactForm">
+                <div class="contact-form-wrapper scroll-reveal right">
+                    <form class="contact-form" id="form">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="text" placeholder="Full Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
+                            <input type="email" placeholder="Email Address" required>
                         </div>
                         <div class="form-group">
-                            <select id="service">
-                                <option value="">Select Service</option>
-                                <option value="commercial">Commercial</option>
-                                <option value="residential">Residential</option>
-                                <option value="design">Design</option>
+                            <select required>
+                                <option value="" disabled selected>Service Interested In</option>
+                                <option>General Contracting</option>
+                                <option>Architectural Design</option>
+                                <option>Renovation</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" placeholder="Project Details" rows="5" required></textarea>
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary ripple">Send Message</button>
+                        <button type="submit" class="btn btn-primary full-width">Send Inquiry</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Map Placeholder -->
-    <div class="map-container">
-        <div class="map-overlay">
-            <span>Map Preview Location</span>
-        </div>
-    </div>
-
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="#" class="logo">Sky<span>line</span></a>
-                    <p>Defining the skyline of modern cities through engineering excellence and luxury design.</p>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe for project updates.</p>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Email Address">
-                        <button><i class="fas fa-paper-plane"></i></button>
-                    </div>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <div class="logo-icon">S</div>
+                    <div class="logo-text">SKYLINE <span>BUILDERS</span></div>
+                </a>
+                <p>Building Tomorrow's Landmarks with Excellence. Quality you can trust, engineering you can depend on.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Skyline Construction. All Rights Reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for the latest construction news.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Email">
+                    <button><i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Skyline Builders. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>
