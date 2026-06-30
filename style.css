@@ -652,3 +652,34 @@ footer {
     .hero h1 { font-size: 2.5rem; }
     .hero-actions { flex-direction: column; }
 }
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    max-width: 1200px;
+    height: auto;
+  }
+}
